@@ -1,0 +1,449 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="styletest.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<title>Testing</title>
+</head>
+<body>
+
+<input type="checkbox" id="check">
+<header>
+
+
+<label for="check">
+<i class=" fas fa-bars" id="navham"></i>
+</label>
+
+<div class ="title">
+<h3>SimplePay - Testing</h3>
+</div>
+
+</header>
+
+<div class="sidenav">
+<a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+<a href="requirements.html"><i class=" fas fa-pencil-ruler"></i><span>Requirements</span></a>
+<a href="story.html"><i class=" fas fa-book-open"></i><span>User Stories</span></a>
+<a href="usecase.html"><i class=" fas fa-network-wired"></i><span>Use Case</span></a>
+<a href="sequence.html"><i class=" fas fa-chart-bar"></i><span>Sequence Diagram</span></a>
+<a href="classdiagram.html"><i class=" fas fa-project-diagram"></i><span>Class Diagram</span></a>
+<a href="testing.html"><i class=" fas fa-vial"></i><span>Testing</span></a>
+<a href="riskmanage.html"><i class=" fas fa-exclamation-triangle"></i><span>Risk Management</span></a>
+<a href="cost.html"><i class=" fas fa-hand-holding-usd"></i><span>Cost Estimation</span></a>
+<a href="interface.html"><i class=" fas fa-tablet-alt"></i><span>Interface</span></a>
+<a href="reports.html"><i class=" fas fa-file-alt"></i><span>Weekly Reports</span></a>
+<a href="video.html"><i class=" fas fa-video"></i><span>Videos</span></a>
+</div>
+
+<div class="content"> 
+
+<div class="info">
+<h2>Testing</h2>
+<br>
+<h3 class="f1">Test Cases</h3>
+<br>
+<details>
+<summary>Test Case 1: Registration</summary>
+<br>
+<p>Project: Simple Pay</p>
+<p>Test Case ID: Test_01</p>
+<p>Test Designed by: Code Addicts</p>
+<p>Test Priority (Low/Medium/High): Medium</p>
+<p>Module Name: Register</p>
+<p>Test Designed date: 30/03/2021</p>
+<p>Test Executed by:Aalimah Ramai</p>
+<p>Test Execution date: 30/03/2021</p>
+<p>Test Title:Registration </p>
+<br>
+<p>Description: Test the account registration in application </p>
+<br>
+<p>Pre-conditions:.User has valid bank account</p>
+<p>Dependencies: Digital Device (Such as a Smart Phone/ Smart Watch etc)</p>
+<br>
+<table style="width:100%">
+<tr>
+<th>Step</th>
+<th>Test Steps</th>
+<th>Test Data</th>
+<th>Expected Result</th>
+<th>Actual Result</th>
+<th>Status (Pass/Fail)</th>
+</tr>
+<tr>
+<td>1</td>
+<td>
+Navigate to register new account 
+</td>
+<td></td>
+<td>User should be able to create an account </td>
+<td>User is able to create  and register a new account </td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Enter a username</td>
+<td>User: Testing123</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>
+Enter a password
+</td>
+<td>Password: letsTest01</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Enter bank credentials</td>
+<td>Bank Acc. No. & Pin: 659845656 & 2090</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Click Register Account</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<br>
+<p>Post-Conditions:</p>
+<p>Users are able to create and register a new account in the application. The account details are logged in the application’s database.</p>
+</details>
+<br>
+<details>
+<summary>Test Case 2: Link Bank Account</summary>
+<br>
+<p>Project: Simple Pay</p>
+<p>Test Case ID: Test_02</p>
+<p>Test Designed by: Code Addicts</p>
+<p>Test Priority (Low/Medium/High): High</p>
+<p>Module Name: User</p>
+<p>Test Designed date: 19/03/2021</p>
+<p>Test Executed by: Ishika Gopie</p>
+<p>Test Execution date: 30/03/2021</p>
+<p>Test Title: Link bank account</p>
+<br>
+<p>Description: User links their bank account to the app.</p>
+<br>
+<p>Pre-conditions: User has valid banking information</p>
+<p>Dependencies: User must be a verified user.</p>
+<br>
+<table style="width:100%">
+<tr>
+<th>Step</th>
+<th>Test Steps</th>
+<th>Test Data</th>
+<th>Expected Result</th>
+<th>Actual Result</th>
+<th>Status (Pass/Fail)</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Navigate to page that prompts user to enter their banking information</td>
+<td></td>
+<td>User should be able to link bank account</td>
+<td>User is navigated to the dashboard which shows that bank account added.</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Provide valid bank</td>
+<td>Republic Bank</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Provide bank branch</td>
+<td>St. Augustine</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Provide account holder’s name</td>
+<td>John Doe</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Provide valid pin </td>
+<td>3897</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Click add account and account is verified</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<br>
+<p>Post-Conditions:</p>
+<p>User’s banking information was validated, and the account was successfully added.</p>
+</details>
+<br>
+<details>
+<summary>Test Case 3: Make Payment</summary>
+<br>
+<p>Project: Simple Pay</p>
+<p>Test Case ID: Test_03</p>
+<p>Test Designed by: Code Addicts</p>
+<p>Test Priority (Low/Medium/High): High</p>
+<p>Module Name: User</p>
+<p>Test Designed date: 19/03/2021</p>
+<p>Test Executed by: Ishika Gopie</p>
+<p>Test Execution date: 30/03/2021</p>
+<p>Test Title: Make Payment </p>
+<br>
+<p>Description: User uses app to make payment </p>
+<br>
+<p>Pre-conditions: User has a linked bank account with sufficient funds.</p>
+<p>Dependencies: User must be a verified user.</p>
+<br>
+<table style="width:100%">
+<tr>
+<th>Step</th>
+<th>Test Steps</th>
+<th>Test Data</th>
+<th>Expected Result</th>
+<th>Actual Result</th>
+<th>Status (Pass/Fail)</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Navigate to the page that prompts the user to enter payment amount. </td>
+<td></td>
+<td>User should be able to make payment.</td>
+<td>User is navigated to the dashboard which shows that payment was successful</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Provide the amount to be paid.</td>
+<td>$150.00</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Select which account you are paying from</td>
+<td>RBC Credit Card</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Click make payment.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<br>
+<p>Post-Conditions:</p>
+<p>User was able to make payment using the app.</p>
+</details>
+
+<br>
+<details>
+<summary>Test Case 4: Scanning QR code </summary>
+<br>
+<p>Project: Simple Pay</p>
+<p>Test Case ID: Test_04</p>
+<p>Test Designed by: Code Addicts</p>
+<p>Test Priority (Low/Medium/High): Medium </p>
+<p>Module Name: User</p>
+<p>Test Designed date: 30/03/2021</p>
+<p>Test Executed by: Pryia Lackhan</p>
+<p>Test Execution date: 30/03/2021</p>
+<p>Test Title: Scanning QR code</p>
+<br>
+<p>Description: User scanning code to make a payment </p>
+<br>
+<p>Pre-conditions: Login into application</p>
+<p>Dependencies: Digital Device with a functional camera</p>
+<br>
+<table style="width:100%">
+<tr>
+<th>Step</th>
+<th>Test Steps</th>
+<th>Test Data</th>
+<th>Expected Result</th>
+<th>Actual Result</th>
+<th>Status (Pass/Fail)</th>
+</tr>
+<tr>
+<td>1</td>
+<td>User navigates to
+screen where to
+scan code. </td>
+<td></td>
+<td>User should be
+allowed to input a
+desired amount </td>
+<td>User was successful in
+scanning the QR
+allowed to enter the
+desired amount</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>2</td>
+<td>User scans code</td>
+<td>QR Code</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Gets information
+from the business
+and allowed to
+enter amount to
+send to the business</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<br>
+<p>Post-Conditions:</p>
+<p>User successfully scan and can make payments</p>
+</details>
+<br>
+<details>
+<summary>Test Case 5: Splitting a Bill</summary>
+<br>
+<p>Project: Simple Pay</p>
+<p>Test Case ID: Test_05</p>
+<p>Test Designed by: CodeAddicts </p>
+<p>Test Priority (Low/Medium/High): Medium</p>
+<p>Module Name: User</p>
+<p>Test Designed date: 30/03/2021 </p>
+<p>Test Executed by: Jediah Castle </p>
+<p>Test Execution date: 30/03/2021 </p>
+<p>Test Title: Splitting a Bill</p>
+<br>
+<p>Description: Multiple user would be able to split purchases among themselves </p>
+<br>
+<p>Pre-conditions: The users must be login with a linked account </p>
+<p>Dependencies: Digital Device</p>
+<br>
+<table style="width:100%">
+<tr>
+<th>Step</th>
+<th>Test Steps</th>
+<th>Test Data</th>
+<th>Expected Result</th>
+<th>Actual Result</th>
+<th>Status (Pass/Fail)</th>
+</tr>
+<tr>
+<td>1</td>
+<td>One user (creator)
+selects split bill tab
+in which a QR code
+is display</td>
+<td></td>
+<td>Multiple User
+should be able
+to make a
+shared payment.</td>
+<td>Users
+payment
+were
+successful</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Other user
+participating then
+scan the QR code</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>The amount due
+from each is
+determine and then
+enter by the creator </td>
+<td>$150.00
+$75.00
+$80.00
+(Above
+represent multiple users)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>The creator then
+scans the business
+QR code then select
+Pay</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>The details of the
+transaction is then
+sent to all
+participants</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<br>
+<p>Post-Conditions: </p>
+<p>User made payments and were sent confirmation details of transactions </p>
+</details>
+<br>
+<h3> Handling Acceptance Testing</h3>
+<br>
+<p>Create and supply the user with access to the testing environment which includes a scenario
+and various test cases. Make sure that the user has a good understanding of the test scenario
+and test cases. Run the test by having the user attempt each of the test cases. Collect output
+information from the test and analyze it by considering the stability of the system, the coverage
+of the testing, the usability of the system and the requirement compliance. </p>
+</div>
+
+</div>
+
+
+
+</body>
+</html>

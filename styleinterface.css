@@ -1,0 +1,179 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	position: fixed;
+	background: #0D171A;
+	padding: 20px;
+	width: 100%;
+	height: 30px;
+}
+
+.title{
+	position: fixed;
+	left: 300px;
+}
+
+.title h3{
+	color: #fff;
+	margin: 0;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.sidenav{
+	background: #0D171A;
+	margin-top: 70px;
+	padding-top: 30px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	transition: 0.5s;
+	transition-property: left;
+}
+
+.sidenav a{
+	color: #B8BAAD;
+	display: block;
+	width: 100%;
+	line-height: 50px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.sidenav a:hover{
+	background: rgb(65, 117, 113,0.2);
+	color: #fff;
+	
+}
+
+.sidenav i{
+	padding-right: 10px;
+	line-height: 50px;
+}
+
+label #navham{
+	z-index: 1;
+	color: #B8BAAD;
+	position: fixed;
+	cursor: pointer;
+	left: 70px;
+	font-size: 20px;
+	margin: 5px 0;
+	transition: 0.5s;
+	transition-property: color;
+}
+
+label #navham:hover{
+	/*color: #19B3D3;*/
+	background-color: #fff;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+
+#check:checked ~ .sidenav a:hover{
+	background: #0D171A;
+}
+
+#check:checked ~ .sidenav i:hover{
+	/*color: #19B3D3;*/
+	background-color: #fff;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+	
+}
+
+#check:checked ~ .sidenav{
+	left: -190px;
+}
+
+#check:checked ~ .sidenav a span{
+	display: none;
+}
+
+#check:checked ~ .sidenav a{
+	font-size: 20px;
+	margin-left: 170px;
+	width: 80px;
+}
+
+.content{
+	margin-left: 250px;
+	background-color: #05504E;
+	background-size: cover;
+	height: 100vh;
+	transition: 0.5s;
+}
+
+#check:checked ~ .content{
+	margin-left: 60px;
+}
+
+#check{
+	display: none;
+}
+
+.info{
+	background-color: #fff;
+	position: fixed;
+	top: 12%;
+	left: 19%;
+	padding: 20px;
+	border-radius: 5px;
+	width: 78%;
+	height: 83%;
+	overflow: scroll;
+	overflow-x: hidden;
+	box-shadow:2px 2px 5px black;
+	transition: 0.5s;
+}
+
+#check:checked ~ .content .info{
+	left: 6%;
+	width: 91%;
+}
+
+.info h2{
+	text-align: center;
+	color: #000a0d;
+	text-decoration: underline;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left:75px;
+
+
+
+}
+
+
+img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 30%;
+  padding: 3px;
+}
+
+/*.info h3{
+	
+	text-align: left;
+	color: #000a0d;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 25px;
+	font-weight: bold;
+}
+*/
